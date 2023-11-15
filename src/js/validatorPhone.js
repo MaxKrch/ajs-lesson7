@@ -8,7 +8,7 @@ class ValidatorPhone {
 
 	static clearTrashInPhone(phone) {
 
-		const trash = /[^0-9\+]/g;
+		const trash = /[^0-9+]/g;
 		const phoneWithoutTrash = phone.replace(trash, '');
 
 		return phoneWithoutTrash;
@@ -20,10 +20,10 @@ class ValidatorPhone {
 		if(phone.length < 10) {
 			throw new Error("Некорректный номер");
 		}
-		
+
 		if(phone.length === 10) {
 			return `+7${phone}`
-		};
+		}
 		
 		if(startLetter != "+") {
 			const phoneWithPlus = `+7` + phone.slice(1);
