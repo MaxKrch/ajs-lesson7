@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/1nyxdb2nav312kxr/branch/main?svg=true)](https://ci.appveyor.com/project/MaxKrch/ajs-lesson7/branch/main)
